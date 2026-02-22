@@ -1,0 +1,21 @@
+C:\Users\dario\source\repos\test exe\test exe\bin\Debug\test exe.exe.config
+C:\Users\dario\source\repos\test exe\test exe\bin\Debug\test exe.exe
+C:\Users\dario\source\repos\test exe\test exe\bin\Debug\test exe.pdb
+C:\Users\dario\source\repos\test exe\test exe\obj\Debug\test exe.csproj.AssemblyReference.cache
+C:\Users\dario\source\repos\test exe\test exe\obj\Debug\test_exe.Form1.resources
+C:\Users\dario\source\repos\test exe\test exe\obj\Debug\test_exe.Properties.Resources.resources
+C:\Users\dario\source\repos\test exe\test exe\obj\Debug\test exe.csproj.GenerateResource.cache
+C:\Users\dario\source\repos\test exe\test exe\obj\Debug\test exe.csproj.CoreCompileInputs.cache
+C:\Users\dario\source\repos\test exe\test exe\obj\Debug\test exe.exe
+C:\Users\dario\source\repos\test exe\test exe\obj\Debug\test exe.pdb
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\bin\Debug\test exe.exe.config
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\bin\Debug\test exe.exe
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\bin\Debug\test exe.pdb
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\obj\Debug\test exe.csproj.AssemblyReference.cache
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\obj\Debug\test_exe.Form1.resources
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\obj\Debug\test_exe.Properties.Resources.resources
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\obj\Debug\test exe.csproj.GenerateResource.cache
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\obj\Debug\test exe.csproj.CoreCompileInputs.cache
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\obj\Debug\test exe.exe
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\obj\Debug\test exe.pdb
+C:\Users\dario\source\repos\Non-UWP App Controller\test exe\obj\Debug\test exe.exe.config
