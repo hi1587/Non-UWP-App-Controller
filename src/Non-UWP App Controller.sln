@@ -1,13 +1,13 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Non-UWP App Controller", "Non-UWP App Controller\Non-UWP App Controller.csproj", "{3EF1E847-20AE-4C64-9ADA-59C3205AC14F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test exe", "Non-UWP App Controller\Non-UWP App Controller.csproj", "{3EF1E847-20AE-4C64-9ADA-59C3205AC14F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
-		test exe\bin\Debug\icon.ico = Non-UWP App Controller\bin\Debug\icon.ico
+		test exe\bin\Debug\icon.ico = test exe\bin\Debug\icon.ico
 	EndProjectSection
 EndProject
 Global

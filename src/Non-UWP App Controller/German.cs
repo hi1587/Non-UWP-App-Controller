@@ -6,16 +6,15 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace test_exe
 {
-    public partial class Form1 : Form
+    public partial class German : Form
     {
-        public Form1()
+        public German()
         {
             InitializeComponent();
             this.MaximizeBox = false;
@@ -35,11 +34,6 @@ namespace test_exe
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("notepad.exe");
@@ -52,11 +46,6 @@ namespace test_exe
             {
                 notepad.Kill();
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -73,29 +62,6 @@ namespace test_exe
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Form creditsForm = new Form();
-            string iconPath = Path.Combine(Application.StartupPath, "icon.ico");
-            creditsForm.MaximizeBox = false;
-            creditsForm.Icon = new Icon(iconPath);
-            creditsForm.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            creditsForm.Text = "Credits";
-            creditsForm.FormBorderStyle = FormBorderStyle.FixedSingle;
-            Label label = new Label();
-            label.Font = new Font(label.Font.FontFamily, 28);
-            label.Text = "Creator: Darboy (also known as hi1587)";
-            label.AutoSize = true;
-            creditsForm.Controls.Add(label);
-            creditsForm.ShowDialog();
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button9_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("explorer.exe");
@@ -107,47 +73,6 @@ namespace test_exe
             foreach (Process explorer in processes)
             {
                 explorer.Kill();
-            }
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            string input = richTextBox1.Text.Trim();
-
-            if (string.IsNullOrEmpty(input))
-            {
-                MessageBox.Show("Please enter a program name or .exe file.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            string processName = input.EndsWith(".exe", StringComparison.OrdinalIgnoreCase)
-                ? input.Substring(0, input.Length - 4)
-                : input;
-
-            try
-            {
-                Process[] processes = Process.GetProcessesByName(processName);
-                if (processes.Length == 0)
-                {
-                    MessageBox.Show("No running instances found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-
-                foreach (Process proc in processes)
-                {
-                    proc.Kill();
-                }
-
-                MessageBox.Show($"Killed {processes.Length} instance(s) of {processName}.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Failed to kill process:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -163,25 +88,74 @@ namespace test_exe
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Failed to start process:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Prozess konnte nicht gestartet werden:\n{ex.Message}", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Please enter a valid .exe file name or path.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bitte geben Sie einen gültigen .exe-Dateinamen oder -pfad ein.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e)
         {
-            
+            string input = richTextBox1.Text.Trim();
+
+            if (string.IsNullOrEmpty(input))
+            {
+                MessageBox.Show("Bitte geben Sie einen Programmnamen oder eine .exe-Datei ein.", "Ungültige Eingabe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string processName = input.EndsWith(".exe", StringComparison.OrdinalIgnoreCase)
+                ? input.Substring(0, input.Length - 4)
+                : input;
+
+            try
+            {
+                Process[] processes = Process.GetProcessesByName(processName);
+                if (processes.Length == 0)
+                {
+                    MessageBox.Show("Es wurden keine laufenden Instanzen gefunden.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                foreach (Process proc in processes)
+                {
+                    proc.Kill();
+                }
+
+                MessageBox.Show($"Es wurden {processes.Length} Instanzen von {processName} beendet.", "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Beenden des Prozesses:\n{ex.Message}", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form creditsForm = new Form();
+            string iconPath = Path.Combine(Application.StartupPath, "icon.ico");
+            creditsForm.MaximizeBox = false;
+            creditsForm.Icon = new Icon(iconPath);
+            creditsForm.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            creditsForm.Text = "Credits";
+            creditsForm.FormBorderStyle = FormBorderStyle.FixedSingle;
+            Label label = new Label();
+            label.Font = new Font(label.Font.FontFamily, 28);
+            label.Text = "Ersteller: Darboy (auch bekannt als hi1587)";
+            label.AutoSize = true;
+            creditsForm.Controls.Add(label);
+            creditsForm.ShowDialog();
+
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            German germanForm = new German();
-            germanForm.Show();
+            Form1 Form1Form = new Form1();
+            Form1Form.Show();
             this.Hide();
         }
     }
-        }
+}

@@ -1,0 +1,12 @@
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\bin\Release\test exe.exe.config
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\bin\Release\test exe.exe
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\bin\Release\test exe.pdb
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\obj\Release\Non-UWP App Controller.csproj.AssemblyReference.cache
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\obj\Release\test_exe.Form1.resources
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\obj\Release\test_exe.German.resources
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\obj\Release\test_exe.Properties.Resources.resources
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\obj\Release\Non-UWP App Controller.csproj.GenerateResource.cache
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\obj\Release\Non-UWP App Controller.csproj.CoreCompileInputs.cache
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\obj\Release\test exe.exe
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\obj\Release\test exe.pdb
+C:\Users\dario\source\repos\Non-UWP App Controller\Non-UWP App Controller\obj\Release\test exe.exe.config
