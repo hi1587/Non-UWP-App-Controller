@@ -6,3 +6,6 @@ a stupid .net app i made
 ## Features
 - Custom Processes (cannot be UWP apps such as calc)
 - German support
+
+## Known Errors
+- Credits (i forgot the icon.ico)
