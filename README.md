@@ -8,4 +8,4 @@ a stupid .net app i made
 - German support
 
 ## Known Errors
-- Credits (i forgot the icon.ico)
+- None
