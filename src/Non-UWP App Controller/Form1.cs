@@ -76,14 +76,12 @@ namespace test_exe
         private void button7_Click(object sender, EventArgs e)
         {
             Form creditsForm = new Form();
-            string iconPath = Path.Combine(Application.StartupPath, "icon.ico");
             creditsForm.MaximizeBox = false;
-            creditsForm.Icon = new Icon(iconPath);
             creditsForm.BackColor = System.Drawing.SystemColors.AppWorkspace;
             creditsForm.Text = "Credits";
             creditsForm.FormBorderStyle = FormBorderStyle.FixedSingle;
             Label label = new Label();
-            label.Font = new Font(label.Font.FontFamily, 28);
+            label.Font = new Font(label.Font.FontFamily, 12);
             label.Text = "Creator: Darboy (also known as hi1587)";
             label.AutoSize = true;
             creditsForm.Controls.Add(label);
