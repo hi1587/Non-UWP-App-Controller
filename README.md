@@ -4,7 +4,7 @@
 a stupid .net app i made
 
 ## Features
-- Custom Processes (cannot be UWP apps such as calc)
+- Custom Processes
 - German support
 
 ## Known Errors
